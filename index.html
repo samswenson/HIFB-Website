@@ -7,6 +7,7 @@
     <title>honoring-idaho-fallen-badges</title>
     <script type="module" crossorigin src="assets/index-DywFeHXP.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-D8yMctCG.css">
+<script src="https://cdn.jsdelivr.net/npm/@stackbit/sdk@0.1.20/dist/stackbit-sdk.min.js" defer></script>
   </head>
   <body>
     <div id="root"></div>
@@ -571,5 +572,16 @@
     			domain: window.location.host
   			}
 			})
-		</script></body>
+		</script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function()  {
+    if (window.Stackbit) {
+      window.Stackbit.init({
+        stackbitVersion: "~0.6.0",
+        devMode: true
+      });
+    }
+  });
+</script>
+  </body>
 </html>
