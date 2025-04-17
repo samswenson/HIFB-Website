@@ -2,12 +2,6 @@
   publish = "/"
   command = ""
 
-[build.environment]
-  NODE_VERSION = "16"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -16,15 +10,5 @@
 [dev]
   command = "npm run dev"
   port = 8888
-  targetPort = 3000
   publish = "/"
   autoLaunch = true
-
-# Settings for Netlify CMS
-[cms]
-  backend = "github"
-  repo = "HIFB Website"
-  branch = "main"
-  publish_mode = "editorial_workflow"
-  media_folder = "public/images/uploads"
-  public_folder = "/images/uploads"
